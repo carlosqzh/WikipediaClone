@@ -52,3 +52,80 @@ a:hover {
 }
 
 /*Main*/
+
+/*Inicio del Nav*/
+.main .nav-container {
+    display: grid;
+    grid-template-columns: 10px repeat(7, 70px) 10px;
+    grid-template-rows: repeat(5, 65px);
+    justify-content: center; 
+} 
+.nav-articule {
+    text-align: center;
+}
+.nav-articule strong {
+    font-size: 1.2rem;
+    color: var(--blue-color);
+}
+.nav-articule p {
+    font-size: 0.93rem;
+    margin: 0.5rem 0 0;
+}
+.nav-articule:nth-of-type(1) {
+    grid-column: 3 / span 2;
+    justify-self: start;
+}
+.nav-articule:nth-of-type(2) {
+    grid-column: 6 / span 2;
+    justify-self: end;
+}
+.nav-articule:nth-of-type(3) {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    justify-self: start;
+}
+.nav-articule:nth-of-type(4) {
+    grid-row: 2;
+    grid-column: 7 / span 2;
+    justify-self: end;
+}
+.nav-articule:nth-of-type(5) {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    justify-self: start;
+}
+.nav-articule:nth-of-type(6) {
+    grid-row: 3;
+    grid-column: 7 / span 3;
+    justify-self: end;
+}
+.nav-articule:nth-of-type(7) {
+    grid-row: 4;
+    grid-column: 2 / span 2;
+    justify-self: start;
+}
+.nav-articule:nth-of-type(8) {
+    grid-row: 4;
+    grid-column: 7 / span 2;
+    justify-self: end;
+}
+.nav-articule:nth-of-type(9) {
+    grid-row: 5;
+    grid-column: 3 /span 2;
+    justify-self: start;
+}
+.nav-articule:nth-of-type(10) {
+    grid-row: 5;
+    grid-column: 6 / span 2;
+    justify-self: end;
+}
+.nav-logo {
+    grid-row: 2 / 5;
+    grid-column: 4 / 7;
+    margin: 0;
+}
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
